@@ -11,3 +11,89 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.container {
+  padding: 24px;
+}
+
+.films-wrapper {
+
+  text-align: left;
+}
+.film {
+  padding: 12px;
+  box-sizing: border-box;
+  display: inline-block;
+  width: calc(100% / 3);
+}
+.film img {
+  width: 100%;
+}
+.film__name {
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+.film__genre {
+  font-size: 12px;
+  color: dimgray;
+}
+.film__image {
+  margin-bottom: 12px;
+}
+.film__name, .film__genre {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.film__footer {
+  display: flex;
+  justify-content: space-between;
+}
+.film__footer-item:first-child {
+  width: 70%;
+}
+.film__footer-item:last-child {
+  padding-left: 18px;
+}
+
+
+.sort {
+  margin-bottom: 12px;
+}
+.sort__matches, .sort__variants {
+  display: inline-block;
+  width: 50%;
+  box-sizing: border-box;
+}
+.sort__variants > * {
+  display: inline-block;
+  vertical-align: center;
+  padding: 0 12px;
+}
+.sort__variants {
+  text-align: right;
+}
+.sort__matches {
+  padding: 0 12px;
+}
+
+.search {
+  padding: 0 12px;
+  margin-bottom: 12px;
+}
+.search__input {
+  margin-bottom: 6px;
+}
+.search__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.search__by-item {
+  display: inline-block;
+  padding-left: 12px;
+  cursor: pointer;
+}
+.search__by-item_red {
+  color: red;
+}
