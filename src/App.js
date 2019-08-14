@@ -79,8 +79,6 @@ class App extends React.Component {
     onChangeHandler(ev) {
         this.searchFilms(this.state.criteria, ev.target.value);
     }
-
-    //TODO 1st parameter must be an event (space case)
     searchFilms(criteria, search) {
         const films = this.state.filmsCopy;
         let filteredFilms;
