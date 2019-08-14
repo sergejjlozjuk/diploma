@@ -178,9 +178,6 @@ class App extends React.Component {
                     </div>
                     <input value={search} type="text" className="search__input"
                            onChange={this.onChangeHandler.bind(this)}/>
-
-                                {/*onChange={ev => this.setState({search: ev.target.value})}*/}
-
                     <div className="search__footer">
                         <div className="search__by">
                             Search By:
