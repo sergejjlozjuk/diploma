@@ -13,11 +13,23 @@ code {
 }
 
 .container {
-  padding: 24px;
+
 }
-
+.netflixRoulette {
+  color: red;
+  margin: auto;
+  font-weight: bold;
+  font-size: 100px;
+}
+.FindText {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: 24px;
+}
 .films-wrapper {
-
+  margin-left: 24px;
+  margin-right: 24px;
   text-align: left;
 }
 .film {
@@ -59,6 +71,10 @@ code {
 
 .sort {
   margin-bottom: 12px;
+  margin-left: 36px;
+  margin-right: 36px;
+  background-color: gray;
+  font-weight: bold;
 }
 .sort__matches, .sort__variants {
   display: inline-block;
@@ -78,22 +94,108 @@ code {
 }
 
 .search {
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   padding: 0 12px;
   margin-bottom: 12px;
+  background-image: url("BY-en-20190722-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+  height: 300px;
 }
 .search__input {
+  box-sizing: border-box;
+  height: 40px;
+  font-weight: bold;
+  margin-left: 24px;
+  margin-right: 24px;
   margin-bottom: 6px;
+  background-color: black;
+  border: none;
+  border-bottom: red;
+  color: white;
+  font-size: 20px;
+}
+.search__input:focus{
+  outline: none;
+  border-bottom: 4px solid mediumvioletred;
 }
 .search__footer {
+  margin-left: 24px;
+  margin-bottom: 12px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  color: white;
+  font-weight: bold;
 }
 .search__by-item {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
   display: inline-block;
   padding-left: 12px;
   cursor: pointer;
 }
+.search__by-item:focus {
+  outline: none;
+}
 .search__by-item_red {
   color: red;
+  font-weight: bold;
+}
+.active_red {
+  color: red;
+}
+.container {
+
+}
+
+.film-preview-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(46, 49, 49, 0.8);
+}
+.film-preview {
+  width: 500px;
+  height: 300px;
+  padding: 12px;
+  background: #FFF;
+  display: flex;
+}
+.film-preview__title {
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+.film-preview__genres {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+.film-preview__description {
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+.film-preview__vote_count {
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+.film-preview__budget {
+  font-size: 12px;
+}
+.film-preview__image {
+  height: 100%;
+  margin-right: 12px;
+  font-size: 24px;
+}
+.film-preview__body {
+  overflow: scroll;
 }
